@@ -1,14 +1,14 @@
-## Nomes, variáveis e escopo
+# Nomes, variáveis e escopo
 - Baseado em [TN10, caps 4.1 a 4.3]
 
-### Nome/Identificador:
+## Nome/Identificador:
 Nomeação de entidades seguindo <strong>regras léxicas</strong>    
     - Exemplo: C/C++ e Java ( ' _ ' e Case Sensitive).
     - Cobol (' - ' mas só no início ou fim).
     - Fortran (Tudo maiúsculo).
     - Pascal e Ada (Case Insensitive).
 
-### Palavras reservadas/chave:
+## Palavras reservadas/chave:
 Conjunto de nomes que possuem significado especial.
 	- Exemplo: for, if, else, final, elif.
 	- Existem identificadores predefinidos que possuem um significado especial, MAS podem ser redefinidos.
@@ -28,7 +28,7 @@ end
 Ponto positivo do pascal: Minimiza palavras chave.
 Ponto negativo do pascal: Confuso.
 
-### Amarração/Ligação/Binding
+## Amarração/Ligação/Binding
 Associação entre uma entidade e uma propriedade (entre variável e valor)
     - Ocorre antes da execução, é estática;
       ocorre em tempo de execução, é dinâmica.
@@ -40,7 +40,7 @@ Associação entre uma entidade e uma propriedade (entre variável e valor)
     - Tempo de execução do programa
     - Precoce (C/C++, Java) Tardia (Python, Haskell).
 
-### Variável:
+## Variável:
 Ligação de um nome a um endereço de memória
     - Endereço de memória.
     - Tipo.
@@ -54,14 +54,14 @@ x = *y + 1;
 x = !y + 1;
 ```
 
-### Escopo:
+## Escopo:
 Coleção de comandos que podem acessar essa ligação de nome, permitindo reutilização de nomes;
 
-### Estático:
-Alinhado ou Disjunto.
-{        |   {
-    {    |   }
-    }    |   {
-}        |   }
+## Estático:
+Alinhado &emsp;  Disjunto. <br>
+&emsp; { &emsp;&emsp;  |  &emsp;  { <br>
+&emsp;&emsp; { &emsp;  |  &emsp; } <br>
+&emsp;&emsp; } &emsp;  |  &emsp;  { <br>
+&emsp; } &emsp;&emsp;  |  &emsp; }
 
 
