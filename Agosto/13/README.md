@@ -14,21 +14,17 @@ von Newmann.
 ## Configuração técnica
 As linguagens devem satisfazer a outras configurações técnicas nas quais são usadas. 
 
-## Padrões: Definir um padrão independente na máquina. 
---------------------------------------------------------------
-| &emsp; ANSI &emsp; | &emsp; ISO &emsp; | &emsp; STD &emsp; |
---------------------------------------------------------------
+## Padrões: Definir um padrão independente na máquina.
+ANSI &emsp; | &emsp; ISO &emsp; | &emsp; STD
 
 ## Sistema Legado
-Artefatos de software projetados e implementados por uma equipe anterior mas mantidos pela atual. 
+Artefatos de software projetados e implementados por uma equipe anterior mas mantidos pela atual. <br>
+C &emsp; | &emsp; C++ &emsp; | &emsp; "JAVA" 
 
---------------------------------------------------------------
-| &emsp; C &emsp; | &emsp; C++ &emsp; | &emsp; "JAVA" &emsp; | 
---------------------------------------------------------------
 ## Compiladas: 
-### C
+### C:
 Léxico -> Sintático -> Semântico -> .exe -> Saída 
 
 ## Interpretadas: 
-### Python
+### Python:
 Léxico -> Sintático -> Interpretador -> Saída  
