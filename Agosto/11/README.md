@@ -24,7 +24,7 @@ Controle -> Programa <br>
 ALU -> Programa <br>
 Programa -> Saída <br> 
 
-    FORTRAN:
+### FORTRAN:
 ```fortran
 program circle 
 real R , area 
@@ -37,7 +37,7 @@ end
 ```
 
 ## Orientado a Objetos: 
-    JAVA: 
+### JAVA: 
 ```java
 public class Main { 
     public static void main(String[] args) { 
@@ -47,19 +47,22 @@ public class Main {
 ```  
     
 ## Funcional: 
-    QUICKSORT: 
+### QUICKSORT EM HASKELL: 
 ```haskell
-    qsort :: Ord a => [a] -> [a] 
-    qsort [ ] = [ ] 
-    qsort (p : xs) = qsort [x | x <- xs, x < p] ++ p ++ qsort [x] x <- xs. x >= p] 
+qsort :: Ord a => [a] -> [a] 
+qsort [ ] = [ ] 
+qsort (p : xs) = qsort [x | x <- xs, x < p] ++ p ++ qsort [x] x <- xs. x >= p] 
 ```  
 
-## Lógico:  
-    woman (mia). 
-    woman (jodie). 
-    woman (paty). 
-    playsAirGuitar (jodie). 
-    party. 
-    ? - playsAirGuitar (mia). 
-    ? - playsAirGuitar (jodie). 
-    % no yes 
+## Lógico:
+### PROLOG:
+```prolog
+woman (mia). 
+woman (jodie). 
+woman (paty). 
+playsAirGuitar (jodie). 
+party. 
+? - playsAirGuitar (mia). 
+? - playsAirGuitar (jodie). 
+% no yes 
+```
