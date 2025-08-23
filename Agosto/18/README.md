@@ -60,8 +60,8 @@ Coleção de comandos que podem acessar essa ligação de nome, permitindo reuti
 ## Estático:
 Alinhado &emsp;  Disjunto. <br>
 &emsp; { &emsp;&emsp;  |  &emsp;  { <br>
-&emsp;&emsp; { &emsp;  |  &emsp; } <br>
-&emsp;&emsp; } &emsp;  |  &emsp;  { <br>
+&emsp;&emsp; { &emsp;  |  &emsp; { <br>
+&emsp;&emsp; } &emsp;  |  &emsp;  } <br>
 &emsp; } &emsp;&emsp;  |  &emsp; }
 
 
