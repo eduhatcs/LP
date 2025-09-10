@@ -24,7 +24,7 @@ void aniversario (Pessoa **p) {
 <strong>L:</strong> &emsp; Ledigibilidade. <br>
 <strong>R:</strong> &emsp; Redigibilidade. <br>
 <strong>CF:</strong> &emsp; Confiabilidade. <br>
-<strong>CT</strong> &emsp; Custo.
+<strong>CT:</strong> &emsp; Custo.
 
 ## L.1: Simplicidade:  
 Maneiras de chegar ao mesmo lugar de formas diferentes. <br>
