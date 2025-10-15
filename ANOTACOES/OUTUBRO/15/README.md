@@ -38,4 +38,11 @@ Supõe que a heap inicial seja uma cadeia contínua de nós chamados de lista_li
 
 ![Imagem do contador de referência](img/contador-referencia.png)
 
+## 11.3.2 MARCAR-VARRER
+Todos os blocos que permanecem não marcados (MB = 0) na Passagem I são então identificados como órfãos.
+
+![Imagem do marcar-varrer sem passagem](img/marcar-varrer.png)
+
+![Imagem do marcar-varrer após a Passagem I](img/marcar-varrer-Passagem-I.png)
+
 
