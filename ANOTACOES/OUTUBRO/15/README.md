@@ -11,7 +11,8 @@ Capítulo 11
 ![Estrutura da Memória em Tempo de Execução](img/estrutura-memoria-tempo-execucao.png)
 
 <br>
-&esmp; **Problema:** Fragmentação.<br>
+
+&emsp; **Problema:** Fragmentação.<br>
 &emsp; Coleta de lixo. <br>
 &emsp; Não definida, [new, em C++ criou e não sabe o que tem naquela parte da memória]<br>
 &emsp; não usado, [delete, apagou e ficou na memória]<br>
