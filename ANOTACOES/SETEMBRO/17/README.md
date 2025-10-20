@@ -27,7 +27,7 @@ a + b + c
 
 - **Notação polonesa posfixa:** *Fortran* 
 ```fortran
-ab + cd * - &emsp; 
+ab + cd * - 
 ```
 
 - **Notação Cambridge:** *LISP e Scheme*
