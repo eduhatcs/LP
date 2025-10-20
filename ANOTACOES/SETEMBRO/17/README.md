@@ -16,7 +16,10 @@ Semântica é a definição precisa do significado de qualquer programa que este
 ## 7.2.1 NOTAÇÃO
 Pode se imaginar como uma àrvore
 
-- **Notação interfixa** 
+- **Notação interfixa**
+```c
+a + b + c
+```
 - **Notação polnesa prefixa:** *Não tem uma linguagem especificada*
 ```
 - + ab * cd
