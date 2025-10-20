@@ -3,7 +3,7 @@ Capítulos 7.1 a 7.4<br>
 # 7.2 SEMÂNTICA
 Semântica é a definição precisa do significado de qualquer programa que esteja correto.
 
-&emsp; - **Operacional:** Exemplo(Fortran IBM709). <br>
+&emsp; - **Operacional:** Representar o significado de um programa diretamente no código de máquina real (ou simulada). Exemplo (Fortran IBM709). <br>
 &emsp; - **Axiomático:** Ser extremamente objetivo. (Axioma é um conceito matemático). <br>
 &emsp; - **Denotacional:** Funciona como uma "função" que vai para outros estados.
 
