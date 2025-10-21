@@ -5,6 +5,9 @@ Capítulos 7, 9 e 11
 ## CAPÍTULO 7
 
 1. **Semântica operacional vs axiomática vs denotacional.**
+Operacional: **Vantagem:** Representar o significado de um programa diretamente pelo código de máquina real (ou simulada). Exemplo, Fortran (IBM709). **Desvantagem:** limita a utilidade para compiladores e programadores que trabalham com arquiteturas diferentes. <br>
+Axiomática: É extremamente objetiva. **Vantagem:** Ir direto ao ponto do problema. **Desvantagem:** Díficil especificar efeitos colaterais em expressões. <br>
+Denotacional: Funciona como uma "função" que vai para outros estados. **Vantagem:** Fundamento matemático rigoroso e independência de implementação.  **Desvantagem:** Complexidade matemática e dificuldade com recursão. <br>
 
 <br>
 
