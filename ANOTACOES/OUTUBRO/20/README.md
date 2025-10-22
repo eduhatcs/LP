@@ -5,6 +5,7 @@ Capítulos 7, 9 e 11
 ## CAPÍTULO 7
 
 1. **Semântica operacional vs axiomática vs denotacional.** <br>
+
 &emsp; Operacional: **Vantagem:** Representar o significado de um programa diretamente pelo código de máquina real (ou simulada). Exemplo, Fortran (IBM709). **Desvantagem:** limita a utilidade para compiladores e programadores que trabalham com arquiteturas diferentes. <br>
 <br>
 &emsp; Axiomática: É extremamente objetiva. **Vantagem:** Ir direto ao ponto do problema. **Desvantagem:** Díficil especificar efeitos colaterais em expressões. <br>
@@ -14,6 +15,7 @@ Capítulos 7, 9 e 11
 <br>
 
 2. **Benefícios da notação posfixa/prefixa/de Cambridge.** <br>
+
 &emsp; Posfixa: As operações de subtrair, multiplicar, somar ou dividir estão após as variáveis. Não necessita de uso de parênteses. Avaliação simples e eficiente através de uma Pilha. Exemplo: AB + C * 
 
 <br>
@@ -27,6 +29,7 @@ Capítulos 7, 9 e 11
 <br>
 
 1. **Curto circuito. Benefícios e malefícios.** <br>
+
 &emsp; Benefício: Permite fazer operações simples de forma rápida, ganhando em segurança e desempenho. 
 &emsp; Malefício: Se uma subexpressão que não é avaliada, bugs podem ocorrer. E pode também não fazer todas as operações necessárias (como pular verificação). Por exemplo: 
 ```c
@@ -35,10 +38,12 @@ if (funcA() || funcB()) {...} // se funcA for verdadeiro, o funcB nunca será ch
 <br>
 
 4. **Estado de um programa.** <br>
+
 Uma fotografia instantânea completa de tudo que é variável na execução do programa em um determinado momento.
 <br>
 
 5. **Efeito colateral.** <br>
+
 Alterar em uma função uma variável global que não foi declada dentro dela. Exemplo:
 ```c
 int contador;
@@ -51,6 +56,7 @@ int somarUm(int x) {
 <br>
 
 6. **Semântica de Atribuição: Múltipla; Comando vs Expressão; Cópia vs Referência** <br>
+
 &emsp; Múltipla; <br>
 &emsp; Comando vs Expressão; <br>
 &emsp; Cópia vs Referência;
@@ -58,6 +64,7 @@ int somarUm(int x) {
 <br>
 
 7. **Semântica de controle de fluxo: Sequência; Condicionais; Laços;** <br>
+
 &emsp; Sequência; <br>
 &emsp; Condicionais; <br>
 &emsp; Laços;
@@ -65,6 +72,7 @@ int somarUm(int x) {
 <br>
 
 8. **Semântica E/S: Arquivos Padrão; Fluxos; Sequencial Formatada;** <br>
+
 &emsp; Arquivos Padrão; <br>
 &emsp; Fluxos; <br>
 &emsp; Sequencial Formatada; 
@@ -76,12 +84,14 @@ int somarUm(int x) {
 <br>
 
 10. **Semântica Exceções: Retorno vs Parâmetro; Prosseguimento vs Finalização;** <br>
+
 &emsp; Retorno vs Parâmetro; <br>
 &emsp; Prosseguimento vs Finalização;
 
 <br>
 
 11. **Exceção vs Asserção: Pré-condição; Pós-condição; Invariante ao laço;** <br>
+
 &emsp; Pré-condição; <br>
 &emsp; Pós-condição; <br>
 &emsp; Invariante ao laço;
@@ -93,6 +103,7 @@ int somarUm(int x) {
 <br>
 
 13. **Parâmetro: Real vs Formal; Opcional (em ordem e fora de ordem).** <br>
+
 &emsp; Real vs Formal; <br>
 &emsp; Opcional em ordem; <br>
 &emsp; Opcional fora de ordem.
@@ -100,6 +111,7 @@ int somarUm(int x) {
 <br>
 
 14. **Passagem: Valor; Referência; Resultado-valor; Resultado; Nome** <br>
+
 &emsp; Valor; <br>
 &emsp; Referência; <br>
 &emsp; Resultado-valor; <br>
@@ -129,8 +141,8 @@ int somarUm(int x) {
 <br>
  
 20. **Overflow de Heap e de Pilha.** <br>
+
 &emsp; Pilha: O overflow da Pilha ocorre pela falta de memória, que pode ser causada por loops de chamadas de funções excessivas ou infinitas. Também pode ser por alocação de variáveis locais muito grandes. <br>
-<br>
 &emsp; Heap: Uma causa de overflow de Heap ocorre pelo vazamento de memória, onde aloca memória dinamicamente, mas perde as referencias a ela sem a liberar. 
 
 <br>
@@ -140,6 +152,7 @@ int somarUm(int x) {
 <br>
 
 22. **Estratégias: Contagem; Marcar e Varrer; Cópia;** <br>
+
 &emsp; Contagem; Conta cada vez que é referenciada por alguém. O que não tiver um número de contagem maior do que 0, é apagado. <br>
 &emsp; **Vantagem:** Remoção imediata. <br>
 &emsp; **Desvantagem:** Sobrecarga de atribuições e falha com referências cíclicas. <br>
