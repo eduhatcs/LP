@@ -146,14 +146,12 @@ int somarUm(int x) {
 <br>
 
 &emsp; Marcar e Varrer; Faz a passagem e marca as variáveis que são referenciadas por alguém. As que não forem marcadas, serão apagadas. <br>
-
 &emsp; **Vantagem:** É capaz de reconhecer referências cíclicas. Sem sobrecarga de atribuições. <br>
 &emsp; **Desvantagem:** Pausas significativas e fragmentação de memória. <br>
 
 <br>
 
 &emsp; Cópia; Com uma passagem, o heap é dividido em dois espaços de mesmo tamanho com a cópia de todos os valores que são referenciados, ou "vivos". O outro espaço antigo, antes da cópia, são todos marcados como lixo e abandonados. Sendo assim, apenas sobrando os objetos "vivos" no espaço copiado. <br>
-
 &emsp; **Vantagem:** Não tem fragmentação de memória. É capaz de reconhecer referências cíclicas. <br>
 &emsp; **Desvantagem:** Alocação extra de memória. <br>
 
