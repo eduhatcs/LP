@@ -6,17 +6,22 @@ Capítulos 7, 9 e 11
 
 1. **Semântica operacional vs axiomática vs denotacional.** <br>
 &emsp; Operacional: **Vantagem:** Representar o significado de um programa diretamente pelo código de máquina real (ou simulada). Exemplo, Fortran (IBM709). **Desvantagem:** limita a utilidade para compiladores e programadores que trabalham com arquiteturas diferentes. <br>
+<br>
 &emsp; Axiomática: É extremamente objetiva. **Vantagem:** Ir direto ao ponto do problema. **Desvantagem:** Díficil especificar efeitos colaterais em expressões. <br>
+<br>
 &emsp; Denotacional: Funciona como uma "função" que vai para outros estados. **Vantagem:** Fundamento matemático rigoroso e independência de implementação. **Desvantagem:** Complexidade matemática e dificuldade com recursão. <br>
 
 <br>
 
 2. **Benefícios da notação posfixa/prefixa/de Cambridge.** <br>
 &emsp; Posfixa: As operações de subtrair, multiplicar, somar ou dividir estão após as variáveis. Não necessita de uso de parênteses. Avaliação simples e eficiente através de uma Pilha. Exemplo: AB + C * 
+
 <br>
 
 &emsp; Prefixa: As operações estão antes das variáveis. Isso é bom, pois o sabe-se qual operação realizar com as variáveis seguintes, até achar um outro operador para mudar a operação. Elimina o uso de parênteses. Mapeamento direto para Àrvores de Sintaxe Abstrata (AST), onde o operador é sempre o nó raiz e os operandos são seus filhos. Exemplo: - AB * C
+
 <br>
+
 &emsp; Cambridge: Uma variação da notação prefixa, onde permite realizar operações mais complexas, fazendo cada operação por vez. Reduz a ambiguidade. Exemplo: (*(+ AB)C)
 
 <br>
@@ -125,6 +130,7 @@ int somarUm(int x) {
  
 20. **Overflow de Heap e de Pilha.** <br>
 &emsp; Pilha: O overflow da Pilha ocorre pela falta de memória, que pode ser causada por loops de chamadas de funções excessivas ou infinitas. Também pode ser por alocação de variáveis locais muito grandes. <br>
+<br>
 &emsp; Heap: Uma causa de overflow de Heap ocorre pelo vazamento de memória, onde aloca memória dinamicamente, mas perde as referencias a ela sem a liberar. 
 
 <br>
@@ -135,17 +141,17 @@ int somarUm(int x) {
 
 22. **Estratégias: Contagem; Marcar e Varrer; Cópia;** <br>
 &emsp; Contagem; Conta cada vez que é referenciada por alguém. O que não tiver um número de contagem maior do que 0, é apagado. <br>
-**Vantagem:** Remoção imediata. <br>
-**Desvantagem:** Sobrecarga de atribuições e falha com referências cíclicas. <br>
+&emsp; **Vantagem:** Remoção imediata. <br>
+&emsp; **Desvantagem:** Sobrecarga de atribuições e falha com referências cíclicas. <br>
 <br>
 &emsp; Marcar e Varrer; Faz a passagem e marca as variáveis que são referenciadas por alguém. As que não forem marcadas, serão apagadas. <br>
 
-**Vantagem:** É capaz de reconhecer referências cíclicas. Sem sobrecarga de atribuições. <br>
-**Desvantagem:** Pausas significativas e fragmentação de memória. <br>
+&emsp; **Vantagem:** É capaz de reconhecer referências cíclicas. Sem sobrecarga de atribuições. <br>
+&emsp; **Desvantagem:** Pausas significativas e fragmentação de memória. <br>
 
 <br>
 &emsp; Cópia; Com uma passagem, o heap é dividido em dois espaços de mesmo tamanho com a cópia de todos os valores que são referenciados, ou "vivos". O outro espaço antigo, antes da cópia, são todos marcados como lixo e abandonados. Sendo assim, apenas sobrando os objetos "vivos" no espaço copiado. <br>
 
-**Vantagem:** Não tem fragmentação de memória. É capaz de reconhecer referências cíclicas. <br>
-**Desvantagem:** Alocação extra de memória. <br>
+&emsp; **Vantagem:** Não tem fragmentação de memória. É capaz de reconhecer referências cíclicas. <br>
+&emsp; **Desvantagem:** Alocação extra de memória. <br>
 
