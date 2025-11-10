@@ -14,19 +14,31 @@ void qsort (void *v, size_t n, size_t b, (void *, void *)(*cmp));
 
 Capítulo 15 e Apêndice B.3 
 <br>
-- **Proposições => V ou F** <br>
+
+- **Proposições => V ou F**
+
+- **Operadores => ^, v, ¬ ou ~, =>, <=>**
+
+- **Tabela verdade***
+
+- **Quantificador:**
+
+```
+**∀** = para todo; para qualquer um; para cada.
+
+**∃** = existe; há pelo menos um.
+  
+**∃!** = existe exatamente um.
+
+**∄** = não existe.
+```
+
 <br>
-- **Operadores => ^, v, ¬ ou ~, =>, <=>** <br>
+
 <br>
-- **Tabela verdade*** <br>
-<br>
-- **Quantificador:** <br>
-**∀** = para todo; para qualquer um; para cada. <br>
-**∃** = existe; há pelo menos um. <br>
-**∃!** = existe exatamente um. <br>
-**∄** = não existe. <br>
-<br>
+
 **Exemplos:**
+
 ```
 ∀x (x é primo => ∃y (y é primo ^ y>x))
 
@@ -80,14 +92,18 @@ p ^ ¬p <=> F
 <br>
 <br>
 
-- **Objetivo:** Coleção de asserções, ou regras, sobre os resultados e as restrições de computação. 
-<br>
+- **Objetivo:** Coleção de asserções, ou regras, sobre os resultados e as restrições de computação.
+
 - **Não determinismo e Backtraking** 
+- **Cláusula de Horn:** h, que é um atributo, e um corpo p1, p2, p3, ... , pn
+
 <br>
-- **Cláusula de Horn:** h, que é um atributo, e um corpo p1, p2, p3, ... , pn <br>
-h <- p1, ... , pn <br>
+
+h <- p1, ... , pn 
+<br>
 nevando(C) <- precipitação(C), congelando(C) 
 <br>
+
 - Toda cláusula de Horn pode ser escrita de forma de predicado Inverso nem sempre é verdadeiro. <br>
 
 ### prolog
